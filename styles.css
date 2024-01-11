@@ -1,0 +1,134 @@
+
+
+body{
+    background-image: url("kepek/teglafal.jpg");
+}
+main{
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #000000;
+    color: beige;
+    box-shadow: 5px 5px 5px  rgb(107, 104, 104);
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 
+    "h h"
+    "a n"
+    "f f"
+    ;
+}
+header{
+    grid-area: h;
+    background-image: url(kepek/beer-new_401732638.jpg); 
+    height: 300px;
+    background-size: cover;
+
+}
+h1{
+    font-weight: bold;
+    font-family: Garamond;
+    letter-spacing: 4px;
+    font-size: 32px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+article img{
+    width: 150px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    border: 1px solid rgb(131, 130, 130);
+    
+}
+
+article{
+    grid-area: a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+}
+article ul {
+    padding: 10px;
+}
+h2{
+    font-size: 15pt;
+}
+article ul li{
+    list-style: square;
+    text-align: justify;
+    font-size: 10pt;
+}
+
+nav{
+    grid-area: n;
+    background-color: #494949;
+    font-weight: bold;
+}
+nav ul{
+    margin: 0;
+    padding: 5px;
+}
+ul li a{
+    text-decoration: none;
+    color: orangered;
+    margin-left: 10px;
+}
+nav ul li{
+    border: 1px solid white;
+    border-radius: 7px;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+nav ul li:hover{
+    background-color: rgb(126, 125, 125);
+}
+nav ul li a:hover{
+    color: white;
+}
+footer{
+    grid-area: f;
+    text-align: center;
+    background-color: rgb(170, 171, 172)
+}
+p{
+    font-size: 15px;
+}
+
+caption{
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: rgb(131, 125, 125);
+}
+table{
+    border: 1px solid  rgb(151, 148, 148);
+    border-collapse: collapse;
+    margin: auto;
+    width: 95%;
+}
+th{
+    border: 1px solid rgb(151, 148, 148);
+    text-align: center;
+}
+td{
+    border: 1px solid  rgb(151, 148, 148);
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    main{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "h"
+        "n"
+        "a"
+        "f";
+    }
+}
